@@ -2,8 +2,7 @@
 export default [{
     input: 'index.js',
     output: {
-      file: 'dist/PropsCheck.js',
-      format: 'es',
-      name: "PropsCheck"
+      file: 'dist/safe-props.js',
+      format: 'es'
     }
   }];

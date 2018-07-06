@@ -1,7 +1,7 @@
 {
   "name": "safe-props",
   "version": "0.0.1",
-  "main": "dist/PropsCheck.js",
+  "main": "dist/safe-props.js",
   "repository": "https://github.com/ztytotoro/PropsCheck.git",
   "author": "Yarn",
   "license": "MIT"
