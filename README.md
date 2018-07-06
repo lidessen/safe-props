@@ -25,4 +25,6 @@ SafeAdd("", 1);
 
 SafeAdd(1, 1);
 //>> 2
+
+//type: ["array", "function", "number", "string", "boolean", "object"]
 ```
