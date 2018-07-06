@@ -1,7 +1,7 @@
 {
   "name": "PropsCheck",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "dist/PropsCheck.js",
   "repository": "https://github.com/ztytotoro/PropsCheck.git",
   "author": "Yarn",
   "license": "MIT"
