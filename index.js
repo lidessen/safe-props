@@ -1,4 +1,4 @@
-export function Safe(option, fun) {
+export default function Safe(option, fun) {
     return function(...props) {
         for(let i = 0; i < props.length || i < option.length; i++) {
             if(!IsType(props[i], option[i].type)) {
