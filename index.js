@@ -1,6 +1,9 @@
 export default function Safe(option, fun) {
     return function(...props) {
         for(let i = 0; i < props.length || i < option.length; i++) {
+            if(IsEmptyObject(option[i])) {
+                continue;
+            }
             if(!IsType(props[i], option[i].type)) {
                 console.error(`prop[${option[i].name ? option[i].name : i}] is not type [${option[i].type}]`)
                 return;
@@ -52,3 +55,18 @@ function IsObject(target) {
     }
     return false;
 }
+
+function IsEmptyObject(object) {
+    if(IsObject(object) && !IsFunction(object) && !IsArray(object)) {
+        for(let prop in object) {
+            if(object.hasOwnProperty(prop)) {
+                return false;
+            }
+        }
+        return true;
+    } else {
+        return false;
+    }
+}
+
+export const _ = {};
